@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Static Wallet Finder (Demo)</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Static Wallet Finder <span class="demo-label">(Demo)</span></h1>
+    <p class="warning">This is a client-side demo. Do not use real funds or private keys. For educational purposes only.</p>
+    <button id="startBtn">Start Random Search</button>
+    <button id="stopBtn" style="display:none;">Stop</button>
+    <div class="wallet-info">
+      <strong>Address:</strong> <span id="address"></span><br>
+      <strong>Private Key:</strong> <span id="privateKey"></span><br>
+      <strong>Balance:</strong> <span id="balance"></span>
+    </div>
+    <div class="network-select">
+      <label for="network">Network:</label>
+      <select id="network">
+        <option value="mainnet">Ethereum Mainnet</option>
+        <option value="bsc">Binance Smart Chain</option>
+        <option value="polygon">Polygon</option>
+      </select>
+    </div>
+    <div class="search-status">
+      <strong>Checked wallets:</strong> <span id="checkedCount">0</span>
+      <pre id="checkedWallets" style="max-height:180px;overflow:auto;background:#f3f3f3;padding:8px;border-radius:6px;"></pre>
+    </div>
+    <div class="found-status">
+      <strong>Funded wallets found:</strong> <span id="foundCount">0</span>
+      <pre id="foundWallets" style="max-height:180px;overflow:auto;background:#e6ffe6;padding:8px;border-radius:6px;"></pre>
+    </div>
+  </div>
+</body>
+</html>
