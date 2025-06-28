@@ -1,4 +1,7 @@
 # Static Wallet Finder (Demo)
+Try wallet finder here:
+https://gamecat9999.github.io/Privatekey.github.io/
+
 Static Wallet Finder is a client-side web application that demonstrates how random cryptocurrency wallets are generated and checked for balances on Ethereum, Binance Smart Chain (BSC), and Polygon networks. The app is built entirely with HTML, CSS, and JavaScript, and can be hosted on GitHub Pages or any static web server.
 
 What It Does
